@@ -59,7 +59,7 @@ def load_image(f):
     return img 
 
 def preprocess_image(img):
-    img = img[60:140,:]
+    img = img[60:140,:,:]
     img = cv2.resize(img,(160, 80))
     #img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
     #img[:,:,2] = img[:,:,2] * ( 0.5 + np.random.uniform() )
